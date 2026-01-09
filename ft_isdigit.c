@@ -1,0 +1,27 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: algungor <algungor@student.42istanbul.com.t+#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/01/07 15:02:32 by algungor          #+#    #+#             */
+/*   Updated: 2026/01/07 15:04:19 by algungor         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+int ft_isdigit(int c)
+{
+    if(c >= '0' && c <= '9')
+        return 1;
+    else
+        return 0;
+}
+int main()
+{
+    printf("%d\n", ft_isdigit('a'));
+    printf("%d\n", ft_isdigit('C'));
+    printf("%d\n", ft_isdigit('2'));
+}
