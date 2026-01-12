@@ -1,34 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: algungor <algungor@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/07 18:10:41 by algungor          #+#    #+#             */
-/*   Updated: 2026/01/10 16:07:21 by algungor         ###   ########.fr       */
+/*   Created: 2026/01/10 18:13:50 by algungor          #+#    #+#             */
+/*   Updated: 2026/01/10 18:36:13 by algungor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+int ft_toupper(int c)
 {
-    size_t i = 0;
-    char *d = (char *) dest;
-    char *s = (char *) src;
-    while(i < n)
-    {
-        d[i] = s[i];
-        i++;
-    }
-    return dest;
+    unsigned char p = (unsigned char)c;
+    if(p >= 'a' && p <= 'z')
+        p -= 32;
+    return p;
 }
 int main()
 {
-    int d = 44;
-    int s = 255;
-    ft_memcpy(&d, &s, 2);
-    printf("%d\n", d);
-    printf("%d\n", s);
+    printf("%c\n", ft_toupper('a'));
+    printf("%c\n", ft_toupper('A'));
 }
