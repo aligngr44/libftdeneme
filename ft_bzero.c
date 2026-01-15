@@ -11,18 +11,15 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-void ft_bzero(void *s, size_t n)
+
+void	ft_bzero(void *s, size_t n)
 {
-    unsigned char *x = s;
-    while(n--)
-    {
-        *x = '\0';
-        x++;
-    }
-}
-int main()
-{
-    char a[] ="abcde";
-    ft_bzero(a, 4);
-    printf("%s\n", a);
+	unsigned char	*x;
+
+	x = s;
+	while (n--)
+	{
+		*x = '\0';
+		x++;
+	}
 }

@@ -14,21 +14,17 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-    size_t i = 0;
-    char *d = (char *) dest;
-    char *s = (char *) src;
-    while(i < n)
-    {
-        d[i] = s[i];
-        i++;
-    }
-    return dest;
-}
-int main()
-{
-    int d = 44;
-    int s = 255;
-    ft_memcpy(&d, &s, 2);
-    printf("%d\n", d);
-    printf("%d\n", s);
+	size_t	i;
+	char	*d;
+	char	*s;
+
+	i = 0;
+	d = (char *)dest;
+	s = (char *)src;
+	while (i < n)
+	{
+		d[i] = s[i];
+		i++;
+	}
+	return (dest);
 }

@@ -11,27 +11,16 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-void *ft_memset(void *p, int c, size_t n)
+
+void	*ft_memset(void *p, int c, size_t n)
 {
-    unsigned char *x = p; 
-    while(n--)
-    {
-        *x = (unsigned char) c;
-        x++;
-    }
-    return x;
-} 
-/*int main()
-{
-    char a[] = "asdewq";
-    char c = 'x';
-    ft_memset(a, c, 3);
-    printf("%s\n", a);
-}/*/
-int main()
-{
-    int a = 0;
-    ft_memset(&a, 154, 4);
-    ft_memset(&a, 0, 1);
-    printf("%d\n", a);
+	unsigned char	*x;
+
+	x = p;
+	while (n--)
+	{
+		*x = (unsigned char)c;
+		x++;
+	}
+	return (x);
 }

@@ -11,15 +11,13 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-int ft_toupper(int c)
+
+int	ft_toupper(int c)
 {
-    unsigned char p = (unsigned char)c;
-    if(p >= 'a' && p <= 'z')
-        p -= 32;
-    return p;
-}
-int main()
-{
-    printf("%c\n", ft_toupper('a'));
-    printf("%c\n", ft_toupper('A'));
+	unsigned char	p;
+
+	p = (unsigned char)c;
+	if (p >= 'a' && p <= 'z')
+		p -= 32;
+	return (p);
 }
