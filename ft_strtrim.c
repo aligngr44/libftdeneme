@@ -19,21 +19,15 @@ char	*ft_strtrim(char const *s1, char const *set)
 	long int	end;
 
 	i = 0;
-	end = ft_strlen(s1) - 1;
 	if (!s1)
 		return (NULL);
+	end = ft_strlen(s1) - 1;
 	while (s1[i] && ft_strchr(set, s1[i]))
-	{
-		if (ft_strchr(set, s1[i]))
-			i++;
-	}
+		i++;
 	while (end >= 0 && ft_strchr(set, s1[end]))
-	{
-		if (ft_strchr(set, s1[end]))
-			end--;
-	}
+		end--;
 	if (i > end)
-		ft_strdup("");
+		return (ft_strdup(""));
 	len = end - i + 1;
 	return (ft_substr(s1, i, len));
 }
