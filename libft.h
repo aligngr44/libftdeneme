@@ -6,7 +6,7 @@
 /*   By: algungor <algungor@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 15:02:42 by algungor          #+#    #+#             */
-/*   Updated: 2026/01/10 18:13:43 by algungor         ###   ########.fr       */
+/*   Updated: 2026/01/19 15:57:58 by algungor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_atoi(const char *nptr);
 void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *s);
-char *ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
 
 #endif

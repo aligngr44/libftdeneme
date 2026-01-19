@@ -4,8 +4,9 @@
 
 int	main(void)
 {
-	char a[] = "Merhaba";
-	char *dst = ft_substr(a, 4, 4);
+	char a[] = "---**Selam..Dünya....**--";
+	char b[] = "-*.";
+	char *dst =	ft_strtrim(a, b);
 	printf("Orj kelime: %s\n", a);
 	printf("son kelime: %s\n", dst);
 	free(dst);
