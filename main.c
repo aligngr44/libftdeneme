@@ -4,8 +4,13 @@
 
 int	main(void)
 {
-	int n = -2147483648;
-	char *dst = ft_itoa(n);
-	printf("Orj kelime: %s\n", dst);
-	
+	int i = 0;
+	char s[] = " bilo tam bir göt ";
+	char c = ' ';
+	char **dst = ft_split(s, c);
+	while (dst[i])
+	{
+		printf("%s\n", dst[i]);
+		i++;
+	}
 }

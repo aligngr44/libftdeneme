@@ -16,6 +16,8 @@ char	*ft_itoa(int n)
 		len++;
 	if (n == 0)
 		return (ft_strdup("0"));
+	if (x < 0)
+		x = -x;
 	while (x != 0)
 	{
 		x = x / 10;
