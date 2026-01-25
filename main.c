@@ -1,16 +1,34 @@
 #include "libft.h"
+#include <fcntl.h> //open için
 #include <stdio.h>
 #include <string.h>
 
+char	deneme(char *s)
+{
+	size_t	i;
+
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] >= 'a' && s[i] <= 'z')
+		{
+			write(1, &s[i], 1);
+			i++;
+		}
+		else 
+		{
+			ft_putendl_fd("küçük harf yok", 2);
+			i++;
+		}
+		
+	}
+}
+
 int	main(void)
 {
-	int i = 0;
-	char s[] = " bilo tam bir göt ";
-	char c = ' ';
-	char **dst = ft_split(s, c);
-	while (dst[i])
-	{
-		printf("%s\n", dst[i]);
-		i++;
-	}
+	int fd;
+	// fd = open("deneme.txt", O_RDWR | O_APPEND);
+	// fd = 2;
+	char s[] = "MerHaBa";
+	printf("%s", deneme(s));
 }
