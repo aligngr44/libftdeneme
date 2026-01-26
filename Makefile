@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                          :::      ::::::::   #
+#   Makefile                                             :+:      :+:    :+:   #
+#                                                      +:+ +:+         +:+     #
+#   By: algungor <algungor@student.42istanbul.com.tr>+#+  +:+       +#+        #
+#                                                  +#+#+#+#+#+   +#+           #
+#   Created: 2026/01/26 18:19:00 by algungor            #+#    #+#             #
+#   Updated: 2026/01/26 18:20:10 by algungor           ###   ########.fr       #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = libft.a
 
 CC = cc
@@ -34,6 +46,7 @@ SRCS =  ft_isalpha.c \
         ft_putchar_fd.c\
         ft_putstr_fd.c\
         ft_putendl_fd.c\
+        ft_putnbr_fd.c \
 
          
 

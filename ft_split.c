@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: algungor <algungor@student.42istanbul.com.t+#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/01/26 16:23:12 by algungor          #+#    #+#             */
+/*   Updated: 2026/01/26 16:23:13 by algungor         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 char	**ft_split(char const *s, char c)
@@ -12,6 +24,8 @@ char	**ft_split(char const *s, char c)
 	i = 0;
 	words = 0;
 	a = 0;
+	if (!s)
+		return (NULL);
 	while (s[i])
 	{
 		while (s[i] == c && s[i])
@@ -36,6 +50,13 @@ char	**ft_split(char const *s, char c)
 			i++;
 		len = i - x;
 		ptr[a] = ft_substr(s, x, len);
+		if (!ptr[a])
+		{
+			while (a > 0)
+				free(ptr[--a]);
+			free(ptr);
+			return (NULL);
+		}
 		a++;
 	}
 	ptr[a] = NULL;
