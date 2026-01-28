@@ -6,7 +6,7 @@
 /*   By: algungor <algungor@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 15:15:02 by algungor          #+#    #+#             */
-/*   Updated: 2026/01/19 15:18:32 by algungor         ###   ########.fr       */
+/*   Updated: 2026/01/28 17:18:12 by algungor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	char	x;
+	unsigned char	x;
 
-	x = (char)c;
+	x = (unsigned char)c;
 	while (*s)
 	{
 		if (*s == x)

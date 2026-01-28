@@ -6,7 +6,7 @@
 /*   By: algungor <algungor@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 15:02:42 by algungor          #+#    #+#             */
-/*   Updated: 2026/01/26 16:18:31 by algungor         ###   ########.fr       */
+/*   Updated: 2026/01/28 16:44:33 by algungor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
-}
+}					t_list;
 
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);

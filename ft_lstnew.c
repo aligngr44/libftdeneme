@@ -6,7 +6,7 @@
 /*   By: algungor <algungor@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 16:14:32 by algungor          #+#    #+#             */
-/*   Updated: 2026/01/26 18:11:47 by algungor         ###   ########.fr       */
+/*   Updated: 2026/01/28 16:24:00 by algungor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,12 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	content = "42";
-	next = NULL;
-	return (content);
+	t_list	*ptr;
+
+	ptr = malloc(sizeof (ptr));
+	if (!ptr)
+		return (NULL);
+	ptr -> content = content;
+	ptr -> next = NULL;
+	return (ptr);
 }
