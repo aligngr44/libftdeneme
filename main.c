@@ -5,9 +5,8 @@
 
 int	main(void)
 {
-	char s[] = "abcde";
-	char a[] = "abcde";
-	printf("%s\n", ft_memmove(s + 2, s, 3));
-	printf("%s\n", memmove(a + 2, a, 3));
-	
+	t_list *node;
+	node = ft_lstnew("sea");
+	printf("%s\n", (char *)node->content);
+	free(node);
 }
