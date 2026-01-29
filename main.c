@@ -5,8 +5,9 @@
 
 int	main(void)
 {
-	char s[] = "Hello";
-	int c = 'l';
-	printf("%s\n", ft_strchr(s, c));
+	char s[] = "abcde";
+	char a[] = "abcde";
+	printf("%s\n", ft_memmove(s + 2, s, 3));
+	printf("%s\n", memmove(a + 2, a, 3));
 	
 }
