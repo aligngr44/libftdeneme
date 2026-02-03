@@ -6,7 +6,7 @@
 #   By: algungor <algungor@student.42istanbul.com.tr>+#+  +:+       +#+        #
 #                                                  +#+#+#+#+#+   +#+           #
 #   Created: 2026/01/26 18:19:00 by algungor            #+#    #+#             #
-#   Updated: 2026/01/26 18:20:10 by algungor           ###   ########.fr       #
+#   Updated: 2026/02/03 19:27:29 by algungor           ###   ########.fr       #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,6 +53,9 @@ SRCS =  ft_isalpha.c \
         ft_lstlast.c\
         ft_lstsize.c\
         ft_lstdelone.c\
+        ft_lstclear.c\
+        ft_lstiter.c\
+        ft_lstmap.c
         
          
 
