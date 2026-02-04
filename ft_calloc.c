@@ -23,8 +23,8 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		ptr = malloc(1);
 		return (ptr);
 	}
-	if(size > SIZE_MAX / nmemb)
-		return NULL;
+	if (size > SIZE_MAX / nmemb)
+		return (NULL);
 	total_size = nmemb * size;
 	ptr = malloc(total_size);
 	if (ptr == 0)

@@ -30,10 +30,12 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 	if (d < s)
 		ft_memcpy(d, s, n);
 	if (d > s)
+	{
 		while (i > 0)
 		{
 			d[i - 1] = s[i - 1];
 			i--;
 		}
+	}
 	return (dst);
 }

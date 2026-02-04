@@ -33,6 +33,8 @@ SRCS =  ft_isalpha.c \
         ft_strrchr.c \
         ft_strncmp.c \
         ft_memchr.c \
+        ft_memcmp.c \
+        ft_strnstr.c \
         ft_atoi.c \
         ft_calloc.c \
         ft_strdup.c \
@@ -56,8 +58,6 @@ SRCS =  ft_isalpha.c \
         ft_lstclear.c\
         ft_lstiter.c\
         ft_lstmap.c
-        
-         
 
 OBJS = $(SRCS:.c=.o)
 
@@ -72,9 +72,11 @@ $(NAME): $(OBJS)
 %.o: %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
-
 clean:
 	$(RM) *.o
+
+fclean: clean
+	$(RM) $(NAME)
 
 re: fclean all
 
