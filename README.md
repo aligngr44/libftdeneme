@@ -1,32 +1,54 @@
-*This project has been created as part of the 42 curriculum by <login>.*
+*This project has been created as part of the 42 curriculum by algungor.*
 
 # Libft
 
-Libft, 42 müfredatı kapsamında geliştirilen, standart C kütüphanesindeki temel fonksiyonların yeniden yazımını ve sık kullanılan yardımcı fonksiyonları içeren bir statik kütüphanedir.  
-Bu proje; C dilinde bellek yönetimi, pointer kullanımı ve temiz kod yazma becerilerini geliştirmeyi amaçlar.
+**Libft**, 42 müfredatı kapsamında geliştirilen ve C dilindeki standart kütüphane fonksiyonlarının yeniden yazımını içeren bir **statik kütüphane** projesidir.  
+Bu proje, öğrencinin C diline hâkimiyetini; özellikle **bellek yönetimi**, **pointer kullanımı**, **string işlemleri** ve **temiz kod yazımı** konularında geliştirmeyi amaçlar.
+
+Libft, ilerleyen 42 projelerinde tekrar tekrar kullanılacak temel bir altyapı kütüphanesi olarak tasarlanmıştır.
 
 ---
 
-## Ne İşe Yarar?
+## Projenin Amacı
 
-Bu kütüphane, gelecekteki 42 projelerinde tekrar tekrar kullanılmak üzere:
-- String işlemleri
-- Bellek işlemleri
-- Sayı dönüştürmeleri
-- Dosya tanımlayıcıları (file descriptor)
-- (Bonus) Linked list yapıları
+Bu proje ile amaçlanan:
 
-için güvenilir ve kurallara uygun fonksiyonlar sunar.
+- Standart C kütüphanesinin nasıl çalıştığını derinlemesine anlamak
+- `malloc` / `free` ile bellek yönetimini doğru yapmak
+- Pointer ve pointer-to-pointer kavramlarını kavramak
+- Norm’a uygun, okunabilir ve güvenli kod yazmak
+- Kendi statik kütüphaneni oluşturup kullanabilmek
 
 ---
 
-## Nasıl Derlenir ve Kullanılır?
+## İçerik
 
-### Derleme
+Libft aşağıdaki fonksiyon gruplarını içerir:
+
+### 🧵 String Fonksiyonları
+`ft_strlen`, `ft_strdup`, `ft_strlcpy`, `ft_strlcat`, `ft_strchr`, `ft_strrchr`, `ft_strncmp`, `ft_strnstr`, `ft_split`, `ft_substr`, `ft_strjoin`, `ft_strtrim`, `ft_strmapi`, `ft_striteri`
+
+### 🧠 Bellek Fonksiyonları
+`ft_memset`, `ft_bzero`, `ft_memcpy`, `ft_memmove`, `ft_memchr`, `ft_memcmp`, `ft_calloc`
+
+### 🔢 Karakter ve Sayı Kontrolleri
+`ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_isascii`, `ft_isprint`, `ft_toupper`, `ft_tolower`
+
+### 🔄 Dönüşüm Fonksiyonları
+`ft_atoi`, `ft_itoa`
+
+### 📤 File Descriptor Fonksiyonları
+`ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`
+
+### ⭐ Bonus – Linked List
+`ft_lstnew`, `ft_lstadd_front`, `ft_lstadd_back`, `ft_lstsize`,  
+`ft_lstlast`, `ft_lstdelone`, `ft_lstclear`, `ft_lstiter`, `ft_lstmap`
+
+---
+
+## Nasıl Derlenir?
+
+Proje kök dizininde aşağıdaki komutları kullanabilirsin:
+
 ```bash
 make
-
-make clean    # object dosyalarını siler
-make fclean   # object dosyaları + libft.a silinir
-make re       # her şeyi baştan derler
-
