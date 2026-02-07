@@ -20,6 +20,17 @@ Bu proje ile amaçlanan:
 - Kendi statik kütüphaneni oluşturup kullanabilmek
 
 ---
+## Kaynaklar
+
+Linux Man Pages (man malloc, man free, man memset, man memmove, man strlen, man write)
+
+Yapay Zekâ Destekli Çeviri: DeepL, Google Translate, ChatGPT (teknik İngilizce açıklamaları Türkçe anlamlandırmak için)
+
+YouTube Aramaları:“malloc free C”, “linked list in C tutorial”, “memmove vs memcpy”, “42 norminette”
+
+Valgrind – Bellek sızıntısı (memory leak) ve invalid read/write kontrolleri
+
+42 Libft Tester Projeleri – Fonksiyon doğrulama ve edge-case testleri
 
 ## İçerik
 
