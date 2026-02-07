@@ -6,7 +6,7 @@
 /*   By: algungor <algungor@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 18:10:41 by algungor          #+#    #+#             */
-/*   Updated: 2026/02/07 15:20:15 by algungor         ###   ########.fr       */
+/*   Updated: 2026/02/07 15:27:17 by algungor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*d;
 	unsigned char	*s;
 
