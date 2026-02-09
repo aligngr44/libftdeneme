@@ -6,7 +6,7 @@
 /*   By: algungor <algungor@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/05 13:53:36 by algungor          #+#    #+#             */
-/*   Updated: 2026/02/05 13:59:22 by algungor         ###   ########.fr       */
+/*   Updated: 2026/02/09 12:47:45 by algungor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,16 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		i++;
 	}
 	return (0);
+}
+#include <stdio.h>
+int main()
+{
+	int a[3];
+	int b[3];
+	a[0] = 1;
+	a[1] = 2;
+	b[0] = 1;
+	b[1] = 5;
+	printf("%d\n", ft_memcmp(a, b, 8));
+	
 }

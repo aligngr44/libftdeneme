@@ -6,7 +6,7 @@
 /*   By: algungor <algungor@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 17:42:03 by algungor          #+#    #+#             */
-/*   Updated: 2026/01/10 18:05:38 by algungor         ###   ########.fr       */
+/*   Updated: 2026/02/09 13:23:03 by algungor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,4 +34,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	}
 	dst[len] = '\0';
 	return (j + ft_strlen(src));
+}
+#include <stdio.h>
+int main()
+{
+	char *src = "xxx";
+	char dst[] = "asd";
+	printf("%d\n", ft_strlcat(dst,src,7));
+	printf("%s\n", dst);
 }
