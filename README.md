@@ -88,6 +88,17 @@ make clean = .o dosyalarını siler
 make fclean = .a ve .o dosyalarını siler
 make re = Her şeyi temizleyip yeniden derler
 ```
+## Resources
+YouTube Eğitim Listesi
+
+Libft ve C fonksiyonları anlatım serisi:
+https://www.youtube.com/watch?v=xtNJvT6GIjI&list=PLzmB302RFLdM6w8iyptjmMFy3pVVmig1k
+
+Man Sayfaları (Resmî Dokümantasyon)
+
+ChatGPT – Kavram açıklamaları ve örnekler
+
+DeepL – Teknik metin çevirileri
 ### AI Usage
 Bu projede yapay zeka araçları aşağıdaki amaçlarla kullanılmıştır:
 - libc fonksiyonlarının davranışlarını ve uç durumlarını anlamak.

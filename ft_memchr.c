@@ -30,15 +30,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
-#include <stdio.h>
-int main()
-{
-	int a[5] = {0, 1, 2, 3, 4};
-
-int *p = ft_memchr(a, 4, 20);
-if (p)
-    printf("Bulundu: %d\n", *p);
-else
-    printf("Bulunamadı\n");
-
-}

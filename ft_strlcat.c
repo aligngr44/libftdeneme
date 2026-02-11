@@ -35,11 +35,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[len] = '\0';
 	return (j + ft_strlen(src));
 }
-#include <stdio.h>
-int main()
-{
-	char *src = "xxx";
-	char dst[] = "asd";
-	printf("%d\n", ft_strlcat(dst,src,7));
-	printf("%s\n", dst);
-}

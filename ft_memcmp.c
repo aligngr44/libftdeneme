@@ -29,15 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-#include <stdio.h>
-int main()
-{
-	int a[3];
-	int b[3];
-	a[0] = 1;
-	a[1] = 2;
-	b[0] = 1;
-	b[1] = 5;
-	printf("%d\n", ft_memcmp(a, b, 8));
-	
-}

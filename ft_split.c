@@ -81,17 +81,3 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (ptr);
 }
-#include <stdio.h>
-int main()
-{
-	char *s = "istanbul,türkiye";
-	char c = ',';
-	char **ptr;
-	int i = 0;
-	ptr = ft_split(s, c);
-	while(ptr[i])
-	{
-		printf("%s\n", ptr[i]);
-		i++;
-	}
-}
